@@ -16,6 +16,7 @@ def not_found(error):
 port = int(os.getenv('PORT', 8000))
 
 # curl -i "http://localhost:5000?origin=Exit_4&destination=C3-1"
+# curl -i "http://0.0.0.0:8000?origin=Exit_4&destination=C3-1"
 # output: {'route': ['Exit_4', 'C1-2', 'E-1', 'E-2', 'E-3', 'C3-1']}
 @app.route('/', methods=['GET'])
 def get_optimal_route():
