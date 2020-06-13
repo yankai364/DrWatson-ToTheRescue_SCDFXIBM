@@ -17,6 +17,18 @@ class RouteFinder():
 
         self.G = G
 
+    def reset_graph(self):
+
+        G = nx.Graph()
+
+        with open('data/node_pairs.csv') as csvfile:
+            readCSV = csv.reader(csvfile, delimiter=',')
+            for row in readCSV:
+                # add edges
+                G.add_edge(row[0],row[1])
+
+        self.G = G
+
     def remove_node(self,nodes):
 
         self.G.remove_nodes_from(nodes)
