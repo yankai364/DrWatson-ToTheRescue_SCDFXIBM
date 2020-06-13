@@ -25,6 +25,31 @@ class RouteFinder():
 
         return nx.shortest_path(self.G, source, target)
 
+    def optimal_entry_route(self,target):
+
+        exits = ['Exit_4','Exit_3','Exit_2','Exit_1']
+        optimal_route = []
+        shortest_path_length = 0
+
+        for exit in exits:
+
+            try:
+                curr_path = nx.shortest_path(self.G, exit, target)
+                curr_length = len(curr_path)
+
+                if shortest_path_length == 0 or curr_length < shortest_path_length:
+                    optimal_route = curr_path
+                    shortest_path_length = curr_length
+
+            except:
+
+                msg = 'No paths found'
+
+        if shortest_path_length == 0:
+            return msg
+
+        return optimal_route
+
     def optimal_exit_route(self,source):
 
         exits = ['Exit_1','Exit_2','Exit_3','Exit_4']
