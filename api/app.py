@@ -38,7 +38,7 @@ def get_optimal_route():
 
 # curl -X PATCH "http://localhost:8000/compromised?zones[]=C2-1&zones[]=C3-1"
 # curl -X PATCH "http://localhost:8000/compromised?zones[]=C2-1"
-# curl -i "https://dr-watson.us-south.cf.appdomain.cloud/compromised?zones[]=C2-1&zones[]=C3-1"
+# curl -X PATCH "https://dr-watson.us-south.cf.appdomain.cloud/compromised?zones[]=C2-1&zones[]=C3-1"
 @app.route('/compromised', methods=['PATCH'])
 def remove_compromised_zones():
     zones = request.args.getlist('zones[]', None)
@@ -51,6 +51,15 @@ def remove_compromised_zones():
         removed[zone] = not rf.G.has_node(zone)
     
     return jsonify({'removed': removed})
+
+
+# curl -X PUT "http://localhost:8000/refresh"
+# curl -X PUT "https://dr-watson.us-south.cf.appdomain.cloud/refresh"
+@app.route('/refresh', methods=['PUT'])
+def refresh():
+    rf.reset_graph()
+    
+    return jsonify({'reset': True})
 
 
 if __name__ == '__main__':
