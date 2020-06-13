@@ -53,9 +53,9 @@ def remove_compromised_zones():
     return jsonify({'removed': removed})
 
 
-# curl -X PUT "http://localhost:8000/refresh"
-# curl -X PUT "https://dr-watson.us-south.cf.appdomain.cloud/refresh"
-@app.route('/refresh', methods=['PUT'])
+# curl -i "http://localhost:8000/refresh"
+# curl -i "https://dr-watson.us-south.cf.appdomain.cloud/refresh"
+@app.route('/refresh', methods=['GET'])
 def refresh():
     rf.reset_graph()
     
