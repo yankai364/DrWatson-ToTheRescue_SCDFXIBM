@@ -19,15 +19,15 @@ def get_optimal_route():
     destination = request.args.get('destination')
     route = []
     
-    if origin != None and destination != None:
-        route = rf.optimal_route(origin, destination)
+    if origin == None and destination == None:
+        abort(404)
     elif origin == None:
         route = rf.optimal_entry_route(destination)
-    else:
+    elif destination == None:
         route = rf.optimal_exit_route(origin)
-        
-    if len(route) == 0:
-        abort(404)
+    else:
+        route = rf.optimal_route(origin, destination)
+    
     return jsonify({'route': route})
 
 
