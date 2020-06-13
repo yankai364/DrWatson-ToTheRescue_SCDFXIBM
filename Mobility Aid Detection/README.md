@@ -1,3 +1,5 @@
+This Readme is based from IBM's Cloud Annotations guide in utilising a trained object detection model with Python. Link to the original repo is here: https://github.com/cloud-annotations/object-detection-python
+
 # Object Detection Python Examples
 
 Run your models trained using [Cloud Annotations](https://github.com/cloud-annotations/training) with python.
@@ -24,10 +26,6 @@ Scores shape: (1917,)
 Image Saved
 ==========
 ```
-
-Saved Image:
-
-![alt text](examples/tflite_interpreter/basic/model/sample_model/tflite_img.jpg)
 
 ### Perform object detection with your model
 
