@@ -1,4 +1,5 @@
 #!flask/bin/python
+import os
 from flask import Flask, request, jsonify, abort, make_response
 from routefinder import RouteFinder
 
@@ -10,10 +11,13 @@ rf = RouteFinder()
 def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
 
+# On IBM Cloud Cloud Foundry, get the port number from the environment variable PORT
+# When running this app on the local machine, default the port to 8000
+port = int(os.getenv('PORT', 8000))
 
-# curl -i "http://localhost:5000/drwatson/routes/optimal?origin=Exit_4&destination=C3-1"
+# curl -i "http://localhost:5000?origin=Exit_4&destination=C3-1"
 # output: {'route': ['Exit_4', 'C1-2', 'E-1', 'E-2', 'E-3', 'C3-1']}
-@app.route('/drwatson/routes/optimal', methods=['GET'])
+@app.route('/', methods=['GET'])
 def get_optimal_route():
     origin = request.args.get('origin', None)
     destination = request.args.get('destination')
@@ -32,4 +36,6 @@ def get_optimal_route():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # app.run(debug=True)
+    app.run(host='0.0.0.0', port=port, debug=True)
+    
