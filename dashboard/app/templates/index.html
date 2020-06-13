@@ -2,7 +2,8 @@
 
 {% block content %}
     <h1>Hi, {{ user.username }}!</h1>
+    Address: SIS
     {% for post in posts %}
-    <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
+    <div><p>Level {{ post.location.floor }} with occupancy {{ post.location.occupancy }}: <b>{{ post.status }}</b></p></div>
     {% endfor %}
 {% endblock %}
