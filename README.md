@@ -1,8 +1,10 @@
 # SCDF Call for Code 2020 - Dr. Watson
 **Problem Statement: Integrating with a Smart Environment**
+
 Team Members: Jane Seah, Lim Pei Xuan, Ong Yan Kai, Patrick Lim, Vinnie Chu
 
-## Problem and Motivation
+## Short description
+### What is the problem?
 In the event of fire, action needs to be swiftly taken to ensure that occupants egress to safety to the best of their abilities instead of simply waiting for help. If it is an environment that the occupants are familiar with, most would be able to safely exit. However, there are a few possible scenarios that could still put them at risk.
 
 * Lack of familiarity with the building layout
@@ -16,6 +18,7 @@ When situations like this occur, the firemen will have to be able to swiftly ide
 * Additional structural damages and blockages may occur, and exiting via the way they entered may not be an option
 	* Searching for alternative routes may take time and lack of familiarity with the building plan may pose further risk
 
+### Our Solution
 Our team believes that with the rise of "Smart" Infrastructure, we can leverage existing and upcoming technologies to address these challenges. We have built a prototype evacuation and rescue system that could be implemented in existing or new buildings, as long as they have the infrastructure required (WiFi, CCTV Cameras and smoke/fire sensors).
 
 To efficiently and safely evacuate occupants when a fire is detected, the system will make use of WiFi Triangulation to locate occupants and serve personalised optimal escape routes directly to their devices. The algorithm will tap on the data from sensors and CCTV cameras to determine which zones are unsafe/blocked and compute the best route to safety accordingly.
@@ -47,4 +50,4 @@ solution)
 (Link to an actual working demo/website)
 
 ## Tools and Technologies
-i) What your team used to build your solution* (e.g. IBM Cloudant, IBM Cloud
+IBM Cloud Foundry, Python 3
