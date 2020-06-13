@@ -27,34 +27,22 @@ Image Saved
 ==========
 ```
 
-### Perform object detection with your model
+## Getting Started
 
-Note: to find a list of all models trained do:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites and installing
+Pip install the packages in `requirement.txt`.
 ```
-cacli list
+pip install -r requirement.txt
 ```
 
-To use a custom model, perform
-```
-cacli download <model_name>
-```
-For example, if the downloaded files were saved to `/path/to/<model_name>` :
-* Our tflite model is stored in `<model_name>/model_android/model.tflite`
-* Our tflite anchors file is stored in `<model_name>/model_android/anchors.json`
-* Our tflite labels file is stored in `<model_name>/model_android/labels.json`
-
-
-```
-cd examples/tflite_interpreter/basic/
-python python-tflite.py --MODEL_DIR /path/to/<model_name>/model_android
-```
-This script calls the tflite model interpreter for inference on all .jpg files inside the directory `PATH_TO_TEST_IMAGES_DIR`.
+### To run the model and obtain the output
+This script below calls the tflite model interpreter for inference on all .jpg files inside the directory `PATH_TO_TEST_IMAGES_DIR`.
 
 Similary the output .jpg files are storesd in `PATH_TO_OUTPUT_DIR`.
 
 We can also specify the minimum confidence (score) for a given detection box to be displayed with `MINIMUM_CONFIDENCE`.
-
-Finally:
 ```
 python python-tflite.py \
 --MODEL_DIR /path/to/<model_name>/model_android \
@@ -63,41 +51,4 @@ python python-tflite.py \
 --MINIMUM_CONFIDENCE 0.01
 
 ```
-
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-### Prerequisites and installing
-Install the required packages in `requirement.txt`
-
-Creating a new virtual environement is recommended.
-
-```
-conda create -n object_detection python=3.7
-conda activate object_detection
-```
-
-Git clone the repo and change directory into it. Then pip install the packages in `requirement.txt`.
-```
-cd directory/you/want/to/clone/into
-git clone https://github.com/cloud-annotations/object-detection-python.git
-cd object-detection-python
-pip install -r requirement.txt
-```
-
-### Test if everything is working
-I have supplied a test model and some test images. This should output the images with detection boxes and labels in jpg format in 'examples/tflite_interpreter/basic/model/output'
-
-```
-cd examples/tflite_interpreter/basic/
-python python-tflite.py
-```
-
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
 
