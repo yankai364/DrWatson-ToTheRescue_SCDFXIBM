@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* Dr Watson to the Rescue - v1.1.0
+* Dr Watson To The Rescue - v1.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
@@ -158,12 +158,6 @@ class Sidebar extends React.Component {
             <UncontrolledDropdown nav>
               <DropdownToggle nav>
                 <Media className="align-items-center">
-                  <span className="avatar avatar-sm rounded-circle">
-                    <img
-                      alt="..."
-                      src={require("assets/img/theme/team-1-800x800.jpg")}
-                    />
-                  </span>
                 </Media>
               </DropdownToggle>
               <DropdownMenu className="dropdown-menu-arrow" right>

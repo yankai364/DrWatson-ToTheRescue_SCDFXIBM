@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* Dr Watson to the Rescue - v1.1.0
+* Dr Watson To The Rescue - v1.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
@@ -14419,7 +14419,7 @@
   .pwd-icon {
       position: absolute;
       left: 44%;
-      top: 52%;
+      top: 44%;
       cursor: pointer;
 
       &:not(:hover) {
@@ -14543,6 +14543,8 @@
     border-color: grey;
     background: white;
     z-index: 1000;
+    white-space: nowrap;
+    overflow: auto;
   }
 
   .cam {
@@ -14551,6 +14553,8 @@
 
   .pwd-container {
     text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   .pwd-btn-container {

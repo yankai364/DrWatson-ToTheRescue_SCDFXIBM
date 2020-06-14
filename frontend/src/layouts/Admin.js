@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* Dr Watson to the Rescue - v1.1.0
+* Dr Watson To The Rescue - v1.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
@@ -25,6 +25,8 @@ import AdminFooter from "components/Footers/AdminFooter.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
 
 import routes from "routes.js";
+
+import myLogo from '../images/logo.jpg'
 
 class Admin extends React.Component {
   componentDidUpdate(e) {
@@ -67,7 +69,7 @@ class Admin extends React.Component {
           routes={routes}
           logo={{
             innerLink: "/admin/index",
-            imgSrc: require("assets/img/brand/argon-react.png"),
+            imgSrc: myLogo,
             imgAlt: "..."
           }}
         />

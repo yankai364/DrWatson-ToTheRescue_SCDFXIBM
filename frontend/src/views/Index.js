@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* Dr Watson to the Rescue - v1.1.0
+* Dr Watson To The Rescue - v1.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
@@ -322,27 +322,29 @@ class Index extends React.Component {
                         this.state.selectedLevel === 2 ?
                           fireImage ?
                             <>
-                              <img src={fireImage} width="100%" alt="floorplan"/>
+                              <img src={fireImage} width="100%" style={{marginBottom:'5rem'}} alt="floorplan"/>
                               {/* <span className="circle" /> */}
                               <img src={soundIcon} alt="sound" width="4%" className={"sound-icon " + (this.state.hideLoudNoise ? 'hidden' : '')} onClick={this.showLoudNoise} />
                             </>
                           : ''
                         : 
                           <>
-                            <img src={this.state.levelImages[this.state.selectedLevel - 1]} width="100%" alt="floorplan" className="floorplan" />
+                            <img src={this.state.levelImages[this.state.selectedLevel - 1]} width="100%" alt="floorplan"  style={{marginBottom:'5rem'}} className="floorplan" />
                             {this.state.selectedLevel === 3 ? <img src={pwd} alt="pwd" width="4%" className={"pwd-icon " + (this.state.hidePwd ? 'hidden' : '')} onClick={this.showPwd} /> : '' }
                           </>
                       }
                     </Col>
                     <Col className="mb-12 mb-xl-0" xl="4" style={{paddingTop:"3rem"}}>
                       {
-                        this.state.showPwd ?
+                        this.state.showPwd && this.state.selectedLevel === 3 ?
                           <div className="pwd-container">
-                            <img src={crutches} height="190" alt="crutches" />
-                            <img src={wheelchair} height="190" alt="wheelchair" />
-                            <h3>Mobility Aids Identified: 2</h3>
-                            <h3>Items: Crutches, Wheelchair</h3>
-                            <h3>Location: C3-1</h3>
+                            <div className="pwd-images-container">
+                              <img src={crutches} height="190" alt="crutches" />
+                              <img src={wheelchair} height="190" alt="wheelchair" />
+                            </div>
+                            <b>Mobility Aids Identified: 2</b><br/>
+                            <b>Items: Crutches, Wheelchair</b><br/>
+                            <b>Location: C3-1</b>
                             <Row style={{marginTop:"1rem"}}>
                               <Col>
                                 <div className="pwd-btn-container">
@@ -369,7 +371,7 @@ class Index extends React.Component {
                               </Col>
                             </Row>
                           </div>
-                        : this.state.showLoudNoise ?
+                        : this.state.showLoudNoise && this.state.selectedLevel === 2 ?
                           <div className="pwd-container">
                             <h3>Sounds of Distress Identified</h3>
                             <h3>Location: R2-4</h3>

@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* Dr Watson to the Rescue - v1.1.0
+* Dr Watson To The Rescue - v1.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
