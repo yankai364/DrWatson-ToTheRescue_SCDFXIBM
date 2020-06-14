@@ -1,4 +1,5 @@
-This repository is the People Counter module. Feel free to test it with your own videos. 
+# Dr. Watson People Counter Module
+**This repository is the People Counter module. Feel free to test it with your own videos. **
 
 #Installation
 ** numpy
