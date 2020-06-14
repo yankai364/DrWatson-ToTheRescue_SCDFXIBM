@@ -1,15 +1,18 @@
 #!flask/bin/python
-import os
 from flask import Flask, request, jsonify, abort, make_response
+from flask_cors import CORS
+import os
 from routefinder import RouteFinder
 
 app = Flask(__name__)
+CORS(app)
 rf = RouteFinder()
 
 
 @app.errorhandler(404)
 def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
+
 
 # On IBM Cloud Cloud Foundry, get the port number from the environment variable PORT
 # When running this app on the local machine, default the port to 8000
@@ -23,7 +26,7 @@ def get_optimal_route():
     origin = request.args.get('origin', None)
     destination = request.args.get('destination')
     route = []
-    
+
     if origin is None and destination is None:
         abort(404)
     elif origin is None:
@@ -32,7 +35,7 @@ def get_optimal_route():
         route = rf.optimal_exit_route(origin)
     else:
         route = rf.optimal_route(origin, destination)
-    
+
     return jsonify({'route': route})
 
 
@@ -44,12 +47,12 @@ def remove_compromised_zones():
     zones = request.args.getlist('zones[]', None)
     if zones is None:
         abort(404)
-    
+
     rf.remove_node(zones)
     removed = {}
     for zone in zones:
         removed[zone] = not rf.G.has_node(zone)
-    
+
     return jsonify({'removed': removed})
 
 
@@ -58,11 +61,10 @@ def remove_compromised_zones():
 @app.route('/refresh', methods=['GET'])
 def refresh():
     rf.reset_graph()
-    
+
     return jsonify({'reset': True})
 
 
 if __name__ == '__main__':
     # app.run(debug=True)
     app.run(host='0.0.0.0', port=port, debug=True)
-    
