@@ -50,21 +50,23 @@ Pitch Video link here
 (Step-by-step instructions to install the required software and how
 to run a demo of your solution)
 
-### Mobility Aid Detection
-[README.md](./MobilityAidDetection/README.md)
-
 ### Distress Identifier
 [README.md](./distress-identifier/README.md)
+
+### Mobility Aid Detection
+[README.md](./MobilityAidDetection/README.md)
 
 ### People Counter
 [README.md](./PeopleCounter/README.md)
 
-### Flask RESTful Web Service
-#### Setup
+### Route Finder (Flask RESTful Web Service)
+#### Setup & Run locally
 ```sh
+cd api
 python3 -m venv create flask
 source flask/bin/activate
 flask/bin/pip install requirements.txt
+./app.py
 ```
 
 #### Find optimal route
@@ -100,7 +102,7 @@ solution)
 ## Proof of Concept
 (Link to an actual working demo/website)
 
-[Dr Watson: To The Rescue](http://dr-watson-to-the-rescue.s3-website-ap-southeast-1.amazonaws.com/admin/index)
+[Dr Watson: To The Rescue](http://dr-watson-to-the-rescue.s3-website-ap-southeast-1.amazonaws.com/)
 
 ## Tools and Technologies
 * Cloud Computing
