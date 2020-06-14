@@ -1,13 +1,10 @@
 # Dr. Watson People Counter Module
 ### This repository is the People Counter module. Feel free to test it with your own videos.
 
-## Installation
-* numpy
-* imutils
-* opencv
-* opencv-contribute
-* matpoltlib
-* pandas
+## Installation of Libraries
+```sh
+pip install requirements.txt
+```
 
 ## Comand to run the program for inference
 ```sh
