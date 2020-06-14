@@ -31,7 +31,7 @@ For the SCDF emergency team rushing to the incident site, they also face a serie
 
 Having all these vital information for the different parties have great potential in significantly reducing the casualties in times of emergency like a fire breakout. 
 
-### Our Solution
+### Our Solution - Dr. Watson To The Rescue --- Making Evacuation and Rescue Safer for All
 Our team believes that with the rise of "Smart" Infrastructure, we can leverage existing and upcoming technologies to address these challenges. We have built a prototype evacuation and rescue system that makes use of smart intelligence collected from various data sources in the smart building to provide a clear, real-time situation on the ground through a 3-D building dashboard, highlighting the vital information for quick and effective decision-making by the first-responders and rescuers. The real-time intelligence also provides data to generate the safest and fastest evacuation routes for the people in the building. 
 
 To efficiently and safely evacuate occupants when a fire is detected, the system will make use of WiFi Triangulation to locate occupants and serve personalised optimal escape routes directly to their devices. The algorithm will tap on the data from sensors and CCTV cameras to determine which zones are unsafe/blocked and compute the best route to safety accordingly.
