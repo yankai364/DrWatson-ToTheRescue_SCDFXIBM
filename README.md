@@ -6,7 +6,9 @@ Team Members: [Jane Seah](https://github.com/shingkid), [Lim Pei Xuan](https://g
 ## Short description
 ### What is the problem?
 
-In times of emergencies, such as fire breakout, there is a need for more on-the-ground intelligence for effective decision-making. 
+In times of emergencies, such as a fire breakout, there is a need for more on-the-ground intelligence for effective decision-making to make evacuation and rescue safer for all. 
+
+#### People within the Building
 
 Currently, for the people within the building, especially those that are panicking and not familiar with the layout of the building, there are a few possible scenarios that could still put them at risk of running to a chokepoint or dangerous zones:
 
