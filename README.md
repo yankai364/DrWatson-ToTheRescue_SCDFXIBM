@@ -98,10 +98,6 @@ curl -X PATCH "https://dr-watson.us-south.cf.appdomain.cloud/compromised?zones[]
 curl -i "https://dr-watson.us-south.cf.appdomain.cloud/refresh"
 ```
 
-## Running the Tests
-Running the tests (Explanation and breakdown on how to run tests for the proposed
-solution)
-
 ## Proof of Concept
 Link to our dashboard: [Dr Watson: To The Rescue](http://dr-watson-to-the-rescue.s3-website-ap-southeast-1.amazonaws.com/)
 
