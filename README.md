@@ -39,7 +39,7 @@ Our solution prototype could be implemented in existing or new buildings, as lon
 Pitch Video link here
 
 ## Solution Architecture
-The architecture of your proposed solution*
+![](sol-arch.png)
 
 ## Detailed Solution
 A hyperlink to your detailed solution* (Long description of your solution)
