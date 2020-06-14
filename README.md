@@ -18,8 +18,7 @@ For the first responders on the ground such as security or nearby First Responde
 
 As for the SCDF emergency team rushing to the incident site, they also face a series of challenges in planning and executing a quick and effective rescue plan:
 
-* There is an information lag as they rely on the information provided by the caller/witnesses at the scene
-	* Occupants at risk may have moved from their last known location
+* There is an information lag as they rely on the information provided by the caller/witnesses at the scene (i.e. Occupants at risk may have moved from their last known location)
 
 * Insufficient real-time overview of the situation and damage to formulate a clear rescue plan
 	* Lack of information of structural damages and blockages increase time to search for rescue routes 
