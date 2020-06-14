@@ -1,4 +1,4 @@
-#python people_detection.py --prototxt Objects.prototxt.txt --model Objects.caffemodel
+#python people_counter.py --prototxt Objects.prototxt.txt --model Objects.caffemodel --dir cctv.mp4
 
 
 #importing all the packages
@@ -26,6 +26,8 @@ def detector():
 		help="path to Caffe pre-trained model")
 	ap.add_argument("-c", "--confidence", type=float, default=0.2,
 		help="minimum probability to filter weak detections")
+	ap.add_argument("-d", "--dir", default="cctv.mp4",
+		help="directory of video test file")
 	args = vars(ap.parse_args())
 
 	CLASSES = ["", "", "", "", "",
@@ -36,7 +38,7 @@ def detector():
 	print("[INFO] loading model...")
 	net = cv2.dnn.readNetFromCaffe(args["prototxt"], args["model"])
 	print("[INFO] starting video stream...")
-	vs = cv2.VideoCapture("cctv.mp4")
+	vs = cv2.VideoCapture(args["dir"])
 	time.sleep(2.0)
 	fps = FPS().start()
 
