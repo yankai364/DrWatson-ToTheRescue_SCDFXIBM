@@ -41,7 +41,9 @@ Upon the actuation of the fire alarm, the responders will have access to a dashb
 Our solution prototype could be implemented in existing or new buildings, as long as they have the infrastructure required (WiFi, CCTV Cameras and smoke/fire sensors).
 
 ## Pitch Video
-Pitch Video link here
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=FJVBh4wFeD4
+" target="_blank"><img src="http://img.youtube.com/vi/FJVBh4wFeD4/0.jpg" 
+alt="Dr Watson Pitch Video" width="240" height="180" border="10" /></a>
 
 ## Solution Architecture
 ![](sol-arch.png)
@@ -50,8 +52,6 @@ Pitch Video link here
 [Read more](https://docs.google.com/document/d/11p-nnQ6YOiT5O3a395TWuMCOUkPPU2C8k-vCn7XmnOs/edit?usp=sharing)
 
 ## Getting Started
-(Step-by-step instructions to install the required software and how
-to run a demo of your solution)
 
 ### Distress Identifier
 [README.md](./distress-identifier/README.md)
