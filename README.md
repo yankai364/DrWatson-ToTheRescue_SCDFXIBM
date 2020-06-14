@@ -49,13 +49,13 @@ Pitch Video link here
 to run a demo of your solution)
 
 ### Mobility Aid Detection
-[README.md](./Mobility Aid Detection/README.md)
+[README.md](./MobilityAidDetection/README.md)
 
 ### Distress Identifier
 [README.md](./distress-identifier/README.md)
 
 ### People Counter
-[README.md](./People Counter/README.md)
+[README.md](./PeopleCounter/README.md)
 
 ### Flask RESTful Web Service
 #### Setup
@@ -66,17 +66,17 @@ flask/bin/pip install requirements.txt
 ```
 
 #### Find optimal route
-**Example 1:** From Exit 4 to Corridor 3-1
+Example 1: From Exit 4 to Corridor 3-1
 ```sh
 curl -i "https://dr-watson.us-south.cf.appdomain.cloud/route?origin=Exit_4&destination=C3-1"
 ```
 
-**Example 2:** To Corridor 3-1
+Example 2: To Corridor 3-1
 ```sh
 curl -i "https://dr-watson.us-south.cf.appdomain.cloud/route?destination=C3-1"
 ```
 
-**Example 3:** From Exit 4
+Example 3: From Corridor 3-1
 ```sh
 curl -i "https://dr-watson.us-south.cf.appdomain.cloud/route?origin=C3-1"
 ```
@@ -98,11 +98,13 @@ solution)
 ## Proof of Concept
 (Link to an actual working demo/website)
 
-[React web app](http://dr-watson-to-the-rescue.s3-website-ap-southeast-1.amazonaws.com/admin/index)
+[Dr Watson: To The Rescue](http://dr-watson-to-the-rescue.s3-website-ap-southeast-1.amazonaws.com/admin/index)
 
 ## Tools and Technologies
 * Cloud Computing
   - IBM Cloud Foundry
+  - IBM Watson Visual Recognition
+  - IBM Developer Model Asset Exchange: Audio Classifier
   - AWS Simple Storage Service
 * Frameworks
   - React
@@ -112,3 +114,7 @@ solution)
   - HTML
   - CSS
   - JavaScript
+* IoT
+  - CCTVs
+  - Sound sensors
+  - Raspberry Pi (WIP)
