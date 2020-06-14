@@ -10,15 +10,18 @@ In times of emergencies, such as a fire breakout, there is a need for more on-th
 
 #### People within the Building
 
-Currently, for the people within the building, especially those that are panicking and not familiar with the layout of the building, there are a few possible scenarios that could still put them at risk of running to a chokepoint or dangerous zones:
+Currently, there are a few possible scenarios that could put these people at risk of running to a chokepoint or dangerous zones during a panicky evacuation:
 
 * Lack of familiarity with the building layout
 * Lack of real-time information of blockages from the fire and alternative exit routes
 * Stranding due to mobility constraints
 
-For the first responders on the ground such as security or nearby First Responders, the priority would be to rush to the key areas that need help directing people to the nearest safest exit or areas where there is a need for assistance, such as people with disabilities. However, current CCTVs are not intelligent in tracking areas and people that need assistance, wasting security and management’s time for an effective on the ground evacuation efforts. 
+#### First Responders: Security, Management, Community First Responders
 
-As for the SCDF emergency team rushing to the incident site, they also face a series of challenges in planning and executing a quick and effective rescue plan:
+For this group of people, the priority would be to rush to the key areas that need help directing people to the nearest safest exit or areas where there is a need for assistance, such as people with disabilities. However, current CCTVs are not intelligent in tracking areas and people that need assistance, wasting security and management’s time for an effective on the ground evacuation efforts. 
+
+#### SCDF First Responders
+For the SCDF emergency team rushing to the incident site, they also face a series of challenges in planning and executing a quick and effective rescue plan:
 
 * There is an information lag as they rely on the information provided by the caller/witnesses at the scene (i.e. Occupants at risk may have moved from their last known location)
 
