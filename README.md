@@ -48,33 +48,45 @@ Pitch Video link here
 (Step-by-step instructions to install the required software and how
 to run a demo of your solution)
 
-```sh
-pip install requirements.txt
-```
+### Mobility Aid Detection
+[README.md](./Mobility Aid Detection/README.md)
+
+### Distress Identifier
+[README.md](./distress-identifier/README.md)
+
+### People Counter
+[README.md](./People Counter/README.md)
 
 ### Flask RESTful Web Service
-**Find optimal route**
-From Exit 4 to Corridor 3-1
+#### Setup
+```sh
+python3 -m venv create flask
+source flask/bin/activate
+flask/bin/pip install requirements.txt
+```
+
+#### Find optimal route
+**Example 1:** From Exit 4 to Corridor 3-1
 ```sh
 curl -i "https://dr-watson.us-south.cf.appdomain.cloud/route?origin=Exit_4&destination=C3-1"
 ```
 
-To Corridor 3-1
+**Example 2:** To Corridor 3-1
 ```sh
 curl -i "https://dr-watson.us-south.cf.appdomain.cloud/route?destination=C3-1"
 ```
 
-From Exit 4
+**Example 3:** From Exit 4
 ```sh
 curl -i "https://dr-watson.us-south.cf.appdomain.cloud/route?origin=C3-1"
 ```
 
-**Update compromised zones**
+#### Update compromised zones
 ```sh
 curl -X PATCH "https://dr-watson.us-south.cf.appdomain.cloud/compromised?zones[]=C2-1&zones[]=C3-1"
 ```
 
-**Reset zones**
+#### Reset zones
 ```sh
 curl -i "https://dr-watson.us-south.cf.appdomain.cloud/refresh"
 ```
@@ -85,7 +97,18 @@ solution)
 
 ## Proof of Concept
 (Link to an actual working demo/website)
+
 [React web app](http://dr-watson-to-the-rescue.s3-website-ap-southeast-1.amazonaws.com/admin/index)
 
 ## Tools and Technologies
-IBM Cloud Foundry, Python 3
+* Cloud Computing
+  - IBM Cloud Foundry
+  - AWS Simple Storage Service
+* Frameworks
+  - React
+  - Flask
+* Programming Languages
+  - Python 3
+  - HTML
+  - CSS
+  - JavaScript
