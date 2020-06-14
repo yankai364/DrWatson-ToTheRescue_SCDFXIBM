@@ -1,5 +1,11 @@
 This repository was based from the IBM pre-trained Audio Classifer. For the purpose of this project, we utilised this model to identify distress signals such as screams and sirens.
 
+To set up the docker:
+````bash
+cd distress-identifier
+docker build -t distress-identifier .
+````
+
 We tested the model with a screaming audio file (found in samples/screaming_output.wav) and obtained the following results:
 
 ![Sound screenshot](docs/screaming_output.jpg)
@@ -7,7 +13,7 @@ We tested the model with a screaming audio file (found in samples/screaming_outp
 The screaming audio file results can be achieved via the following:
 
 ```bash
-$ docker run -it -p 5000:5000 codait/max-audio-classifier
+$ docker run -it -p 5000:5000 distress-identifier
 $ curl -F "audio=@samples/screaming_crowd.wav;type=audio/wav" -XPOST http://localhost:5000/model/predict
 ```
 

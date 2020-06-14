@@ -1,7 +1,7 @@
 # SCDF Call for Code 2020 - Dr. Watson
 **Problem Statement: Integrating with a Smart Environment**
 
-Team Members: Jane Seah, Lim Pei Xuan, Ong Yan Kai, Patrick Lim, Vinnie Chu
+Team Members: [Jane Seah](https://github.com/shingkid), [Lim Pei Xuan](https://github.com/ellpeeaxe), [Ong Yan Kai](https://github.com/yankai364), [Patrick Lim](https://github.com/plyh), [Vinnie Chu](https://github.com/ballchuuu)
 
 ## Short description
 ### What is the problem?
@@ -39,10 +39,10 @@ Our solution prototype could be implemented in existing or new buildings, as lon
 Pitch Video link here
 
 ## Solution Architecture
-The architecture of your proposed solution*
+![](sol-arch.png)
 
 ## Detailed Solution
-A hyperlink to your detailed solution* (Long description of your solution)
+[Read more](https://docs.google.com/document/d/11p-nnQ6YOiT5O3a395TWuMCOUkPPU2C8k-vCn7XmnOs/edit?usp=sharing)
 
 ## Getting Started
 (Step-by-step instructions to install the required software and how
@@ -52,12 +52,40 @@ to run a demo of your solution)
 pip install requirements.txt
 ```
 
+### Flask RESTful Web Service
+**Find optimal route**
+From Exit 4 to Corridor 3-1
+```sh
+curl -i "https://dr-watson.us-south.cf.appdomain.cloud/route?origin=Exit_4&destination=C3-1"
+```
+
+To Corridor 3-1
+```sh
+curl -i "https://dr-watson.us-south.cf.appdomain.cloud/route?destination=C3-1"
+```
+
+From Exit 4
+```sh
+curl -i "https://dr-watson.us-south.cf.appdomain.cloud/route?origin=C3-1"
+```
+
+**Update compromised zones**
+```sh
+curl -X PATCH "https://dr-watson.us-south.cf.appdomain.cloud/compromised?zones[]=C2-1&zones[]=C3-1"
+```
+
+**Reset zones**
+```sh
+curl -i "https://dr-watson.us-south.cf.appdomain.cloud/refresh"
+```
+
 ## Running the Tests
 Running the tests (Explanation and breakdown on how to run tests for the proposed
 solution)
 
 ## Proof of Concept
 (Link to an actual working demo/website)
+[React web app](http://dr-watson-to-the-rescue.s3-website-ap-southeast-1.amazonaws.com/admin/index)
 
 ## Tools and Technologies
 IBM Cloud Foundry, Python 3
