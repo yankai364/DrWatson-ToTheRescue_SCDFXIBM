@@ -63,6 +63,8 @@ alt="Dr Watson Pitch Video" width="240" height="180" border="10" /></a>
 [README.md](./PeopleCounter/README.md)
 
 ### Route Finder (Flask RESTful Web Service)
+![](building-blueprint.png)
+
 #### Setup & Run locally
 ```sh
 cd api
