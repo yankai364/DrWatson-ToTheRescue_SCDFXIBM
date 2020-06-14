@@ -5,18 +5,27 @@ Team Members: Jane Seah, Lim Pei Xuan, Ong Yan Kai, Patrick Lim, Vinnie Chu
 
 ## Short description
 ### What is the problem?
-In the event of fire, action needs to be swiftly taken to ensure that occupants egress to safety to the best of their abilities instead of simply waiting for help. If it is an environment that the occupants are familiar with, most would be able to safely exit. However, there are a few possible scenarios that could still put them at risk.
+
+In times of emergencies, such as fire breakout, there is a need for more on-the-ground intelligence for effective decision-making. 
+
+Currently, for the people within the building, especially those that are panicking and not familiar with the layout of the building, there are a few possible scenarios that could still put them at risk of running to a chokepoint or dangerous zones:
 
 * Lack of familiarity with the building layout
-* Blockages occurring due to damage from the fire and lack of awareness on alternative exit routes
+* Lack of real-time information of blockages from the fire and alternative exit routes
 * Stranding due to mobility constraints
 
-When situations like this occur, the firemen will have to be able to swiftly identify and gain access to their locations to safely extract the occupants from the fire. This is not an easy task, and the firemen face a myriad of challenges in the process.
+For the first responders on the ground such as security or nearby First Responders, the priority would be to rush to the key areas that need help directing people to the nearest safest exit or areas where there is a need for assistance, such as people with disabilities. However, current CCTVs are not intelligent in tracking areas and people that need assistance, wasting security and management’s time for an effective on the ground evacuation efforts. 
+
+As for the SCDF emergency team rushing to the incident site, they also face a series of challenges in planning and executing a quick and effective rescue plan:
 
 * There is an information lag as they rely on the information provided by the caller/witnesses at the scene
 	* Occupants at risk may have moved from their last known location
-* Additional structural damages and blockages may occur, and exiting via the way they entered may not be an option
-	* Searching for alternative routes may take time and lack of familiarity with the building plan may pose further risk
+
+* Insufficient real-time overview of the situation and damage to formulate a clear rescue plan
+	* Lack of information of structural damages and blockages increase time to search for rescue routes 
+	* No clear latest situation of where the trapped people are 
+
+Having all these vital information for the different parties have great potential in significantly reducing the casualties in times of emergency like a fire breakout. 
 
 ### Our Solution
 Our team believes that with the rise of "Smart" Infrastructure, we can leverage existing and upcoming technologies to address these challenges. We have built a prototype evacuation and rescue system that could be implemented in existing or new buildings, as long as they have the infrastructure required (WiFi, CCTV Cameras and smoke/fire sensors).
