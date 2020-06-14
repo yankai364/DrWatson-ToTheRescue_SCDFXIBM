@@ -11,4 +11,4 @@
 
 ## Comand to run the program for inference
 python people_counter.py --prototxt Objects.prototxt.txt --model Objects.caffemodel --dir cctv.mp4
-you may change --dir to your filename 
+* you may change --dir to your filename 
